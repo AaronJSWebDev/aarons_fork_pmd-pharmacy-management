@@ -2166,344 +2166,198 @@
 							<!-- PAGE-HEADER END -->
 
 							<!-- ROW-1 OPEN -->
-                              
+                             
                             <!-- PAGE CONTAINER-->
                             <div>
 
                             <!-- Title -->
-							<div class="d-flex gap-3 py-5 align-items-center">
-								<div>
+                             <h1 class="page-title py-5">Prescribers</h1>
+
+                            <!-- Select a Patient Button-->
+                            <a href="javascript:void(0)" class="btn btn-green  mb-3 ">+ Add New Prescriber</a>
+
+							<!-- SEARCH BAR --- ORDER # RX # PATIENT NAME-->
+                            <div class="input-group md-form form-sm form-2 pb-5 w-80" >
+                                <input class="form-control my-0 py-2 col-sm-5 " type="text" placeholder="Enter physician name..." aria-label="Search">
+                                <div class="input-group-append">
+                                  <span class="input-group-text h-100 " id="basic-text1"><i class=" p-3 h-100 bi-search"
+                                    ></i></span>
+                                </div>
+                              </div>
 
 
-                             <h1 class="page-title ">Licenses</h1></div>
-
-							
-							 <div class="btn btn-green p-2 ">+ Add License</div>
-
-							</div>
-
-                            
-
-
-
-
-                            <!-- IF NO CURRENT SPECIALS SHOW ALERT-->
-                                                   
-                            <!--
-
-                            <div class="flex justify-content-start ">
-                                <div class="alert alert-warning col-md-6 py-5 mt-3" role="alert">
-                                      <i class="fa fa-exclamation me-2" aria-hidden="true"></i>Warning - No clinics currently selected.
-                                 </div>
-                            </div>
-
-                            -->
+							  <!-- TABLE & FORMS CONTAINER-->
+							<div class=" card bg-white  ">
 
                               
-                            <!-- TABLE -->
- 
-					  
-							<div class=" card bg-white ">
-                                          
-				
-							<div class=" card-body table-responsive">
-								<table id="data-table" class=" table border table-bordered text-nowrap mb-0 ">
-									<thead class="">
-										<tr>
-											<th class="align-middle">STATE</th>
-                                            <th class="align-middle">TYPE</th>
-                                            <th class="align-middle">LICENSE #</th>
-                                            <th class="align-middle">EXP DATE</th>
-                                            <th class="align-middle">STATUS</th>
-											<th class="align-middle">EDIT LICENSE</th>
-											
-                                            
-                                         
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
 
-										</tr>
-										<tr>
-											<td class="align-middle">Ohio</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">25533</td>	
-                                            <td class="align-middle">2023-5-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-success rounded-pill p-2 px-3">Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
+                    
+							<!-- TABLE -->
+                            <div class="card-body">
+                                
+                                <div >
+                                    
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered border text-nowrap mb-0" id="new-edit">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Clinic</th>
+                                                    <th>DEA #</th>
+                                                    <th>NPI #</th>                                                 
+                                                    <th>STATUS</th>
+                                                    
+                                                <th name="bstable-actions">Actions</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td >JOE ROGAN</td>
+                                                    <td>telehormones md</td>                                                  
+                                                    <td>4362445</td>
+                                                    <td>226316</td>
+                                                    <td ><span class="badge bg-danger rounded-pill p-2 px-3">EXPIRED</span></td>	
+                                                    
+                                                <td name="bstable-actions"><div class="btn-list">
+                                                    
+            <button id="bEdit" type="button" class="btn btn-sm btn-primary">
+                <span class="fe fe-edit"> </span>
+            </button>
+            <button id="bDel" type="button" class="btn  btn-sm btn-danger">
+                <span class="fe fe-trash-2"> </span>
+            </button>
+            <button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
+                <span class="fe fe-check-circle"> </span>
+            </button>
+            <button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
+                <span class="fe fe-x-circle"> </span>
+            </button>
+                                                   </div></td></tr>
 
-										</tr>
-										<tr>
-											<td class="align-middle">Ohio</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">25533</td>	
-                                            <td class="align-middle">2023-5-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-success rounded-pill p-2 px-3">Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
+                                                   <tr>
+                                                    <td >JOE ROGAN</td>
+                                                    <td>telehormones md</td>                                                  
+                                                    <td>4362445</td>
+                                                    <td>226316</td>
+                                                    <td ><span class="badge bg-success rounded-pill p-2 px-3">VALID</span></td>	
+                                                    
+                                                <td name="bstable-actions"><div class="btn-list">
+            <button id="bEdit" type="button" class="btn btn-sm btn-primary">
+                <span class="fe fe-edit"> </span>
+            </button>
+            <button id="bDel" type="button" class="btn  btn-sm btn-danger">
+                <span class="fe fe-trash-2"> </span>
+            </button>
+            <button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
+                <span class="fe fe-check-circle"> </span>
+            </button>
+            <button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
+                <span class="fe fe-x-circle"> </span>
+            </button>
+                                                </div></td></tr>
 
-										</tr>
-										<tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
+                                                <tr>
+                                                    <td >JOE ROGAN</td>
+                                                    <td>telehormones md</td>                                                  
+                                                    <td>4362445</td>
+                                                    <td>226316</td>
+                                                    <td ><span class="badge bg-danger rounded-pill p-2 px-3">EXPIRED</span></td>	
+                                                    
+                                                <td name="bstable-actions"><div class="btn-list">
+                                                    
+            <button id="bEdit" type="button" class="btn btn-sm btn-primary">
+                <span class="fe fe-edit"> </span>
+            </button>
+            <button id="bDel" type="button" class="btn  btn-sm btn-danger">
+                <span class="fe fe-trash-2"> </span>
+            </button>
+            <button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
+                <span class="fe fe-check-circle"> </span>
+            </button>
+            <button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
+                <span class="fe fe-x-circle"> </span>
+            </button>
+                                                   </div></td></tr>
 
-										</tr>
-										<tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
+                                                   <tr>
+                                                    <td >JOE ROGAN</td>
+                                                    <td>telehormones md</td>                                                  
+                                                    <td>4362445</td>
+                                                    <td>226316</td>
+                                                    <td ><span class="badge bg-success rounded-pill p-2 px-3">VALID</span></td>	
+                                                    
+                                                <td name="bstable-actions"><div class="btn-list">
+            <button id="bEdit" type="button" class="btn btn-sm btn-primary">
+                <span class="fe fe-edit"> </span>
+            </button>
+            <button id="bDel" type="button" class="btn  btn-sm btn-danger">
+                <span class="fe fe-trash-2"> </span>
+            </button>
+            <button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
+                <span class="fe fe-check-circle"> </span>
+            </button>
+            <button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
+                <span class="fe fe-x-circle"> </span>
+            </button>
+                                                </div></td></tr>
 
-										</tr>
-										<tr>
-											<td class="align-middle">Ohio</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">25533</td>	
-                                            <td class="align-middle">2023-5-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-success rounded-pill p-2 px-3">Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
 
-										</tr><tr>
-											<td class="align-middle">Ohio</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">25533</td>	
-                                            <td class="align-middle">2023-5-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-success rounded-pill p-2 px-3">Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
+                                                <tr>
+                                                    <td >JOE ROGAN</td>
+                                                    <td>telehormones md</td>                                                  
+                                                    <td>4362445</td>
+                                                    <td>226316</td>
+                                                    <td ><span class="badge bg-success rounded-pill p-2 px-3">VALID</span></td>	
+                                                    
+                                                <td name="bstable-actions"><div class="btn-list">
+                                                    
+            <button id="bEdit" type="button" class="btn btn-sm btn-primary">
+                <span class="fe fe-edit"> </span>
+            </button>
+            <button id="bDel" type="button" class="btn  btn-sm btn-danger">
+                <span class="fe fe-trash-2"> </span>
+            </button>
+            <button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
+                <span class="fe fe-check-circle"> </span>
+            </button>
+            <button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
+                <span class="fe fe-x-circle"> </span>
+            </button>
+                                                   </div></td></tr>
 
-										</tr>
-										<tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
+                                                   <tr>
+                                                    <td >JOE ROGAN</td>
+                                                    <td>telehormones md</td>                                                  
+                                                    <td>4362445</td>
+                                                    <td>226316</td>
+                                                    <td ><span class="badge bg-danger rounded-pill p-2 px-3">EXPIRED</span></td>	
+                                                    
+                                                <td name="bstable-actions"><div class="btn-list">
+            <button id="bEdit" type="button" class="btn btn-sm btn-primary">
+                <span class="fe fe-edit"> </span>
+            </button>
+            <button id="bDel" type="button" class="btn  btn-sm btn-danger">
+                <span class="fe fe-trash-2"> </span>
+            </button>
+            <button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
+                <span class="fe fe-check-circle"> </span>
+            </button>
+            <button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
+                <span class="fe fe-x-circle"> </span>
+            </button>
+                                                </div></td></tr>
 
-										</tr>
-										<tr>
-											<td class="align-middle">Ohio</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">25533</td>	
-                                            <td class="align-middle">2023-5-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-success rounded-pill p-2 px-3">Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
 
-										</tr>
-										<tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
 
-										</tr>
-										<tr>
-											<td class="align-middle">Ohio</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">25533</td>	
-                                            <td class="align-middle">2023-5-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-success rounded-pill p-2 px-3">Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
 
-										</tr>
-										<tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td name="bstable-actions align-middle "><div class="btn-list">
-												<button id="bEdit" type="button" class="btn btn-sm btn-primary">
-													<span class="fe fe-edit"> </span>
-												</button>
-												<button id="bDel" type="button" class="btn  btn-sm btn-danger">
-													<span class="fe fe-trash-2"> </span>
-												</button>
-												<button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
-													<span class="fe fe-check-circle"> </span>
-												</button>
-												<button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
-													<span class="fe fe-x-circle"> </span>
-												</button>
-											</div></td>
-											
+                                                
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
 
-										</tr>
-                                       
-                                        
-									</tbody>
-								</table>
-							</div>
-
-							
+							<!-- PAGINATION -->
 
 							<div class="pagination-wrapper p-5">
 								<nav aria-label="Page navigation">
@@ -2529,10 +2383,6 @@
 									</ul>
 								</nav>
 							</div>
-
-
-                     
-
 						</div>
 
 						

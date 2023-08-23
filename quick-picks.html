@@ -2176,13 +2176,13 @@
                            
 
                             <!-- SEARCH BAR --- PRODUCT & BY CATEGORY TAGS-->
-                            <div class="card p-4">
+                            <div class="card p-4 col-xl-7 ">
 
                             <label class="form-label">Search Products</label>
 							
                             <div class="input-group md-form form-sm form-2 pb-3 w-80 " >
                                 
-                                <input class="form-control my-0  col-sm-5 " type="text" placeholder="Search product by name..." aria-label="Search">
+                                <input class="form-control my-0  col-md-7 " type="text" placeholder="Search product by name..." aria-label="Search">
                                 <div class="input-group-append">
                                   <span class="input-group-text h-100 " id="basic-text1"><i class=" px-3 py-1 h-100 bi-search"
                                     ></i></span>
@@ -2249,8 +2249,8 @@
 
 
 
-							  <!-- GROUPS TITLE AND CREATE NEW GROUP-->
-							<div class=" ">
+							  <!-- GROUPS LABEL AND CREATE NEW GROUP BTN-->
+							<div>
                                 <div class="card-header d-flex gap-4 align-items-center px-0">
 
                                     
@@ -2268,16 +2268,18 @@
 						</div>
 
 
-                        <!--GROUP CONTAINERS-->
+                        <!--GROUP FLEX CONTAINER-->
+
+						<div class="d-xl-flex gap-3">
 
                         <!--INDIVIDUAL GROUP!!-->
                     <div class="card shadow-sm">
 
 
-                        <div class="card-header d-sm-flex gap-1 justify-content-between align-items-center bg-info-transparent">
+                        <div class="card-header d-sm-flex gap-1 justify-content-between align-items-center bg-primary-gradient">
 
                             <div class="d-flex gap-4 align-items-center">
-                            <h3 class="card-title align-middle text-info">TEST IM 0.4ML</h3>
+                            <h3 class="card-title align-middle text-white">TEST IM 0.4ML</h3>
 
                              <!-- EDIT NAME BUTTON-->
                              <a href="javascript:void(0)" class="btn btn-warning-light  align-middle">Edit Name</a> 
@@ -2288,25 +2290,27 @@
                               <a href="javascript:void(0)" class="btn btn-danger align-middle justify-self-end ">Delete Group</a>
                         </div>
 
+                    
+                     <div class="card-body">
 
-           <div class="card-body">
+           
 
-            <!-- GROUP ITEMS-->
-
-            <!--INDIVIDUAL GROUP ITEM! -->
-            <div class="card shadow-sm">
-                <div class="card-header d-sm-flex gap-1 justify-content-between align-items-center bg-success-transparent">
+                         <!--INDIVIDUAL ITEM! -->
+                         <div class="card shadow-lg">
+                         <div class="card-header d-sm-flex gap-1 justify-content-between align-items-center bg-info-transparent">
 
                     <div class="d-flex gap-4 align-items-center">
-                    <h3 class="card-title align-middle text-success">Syringe - Insulin <em>(30G x 1/2 x 1ML)</em></h3>
+                    <h3 class="card-title align-middle text-info">Syringe - Insulin <em>(30G x 1/2 x 1ML)</em></h3>
                     
 
                     </div>
 
-                      <!-- Delete ITEM Button-->
-                      <span class="btn btn-icon btn-danger rounded-circle btn-sm"><i class=" fa fa-close"
-                        ></i></span>
+                      <!-- DELETE ITEM BTN-->
+                      <span class="btn btn-icon  rounded-circle text-gray"><i class=" ion-close-round"
+						></i></span>
                 </div>
+
+				        <!-- ITEM CONTENTS-->
                         <div class="card-body">
                             
                             <div class="form-row ">
@@ -2337,131 +2341,146 @@
                             
                         </div>
 
-                    </div>
+                         </div>
+                        
+						 <!--INDIVIDUAL ITEM! -->
+						 <div class="card shadow-lg">
+							<div class="card-header d-sm-flex gap-1 justify-content-between align-items-center bg-info-transparent">
+   
+					   <div class="d-flex gap-4 align-items-center">
+					   <h3 class="card-title align-middle text-info">Syringe - Insulin <em>(30G x 1/2 x 1ML)</em></h3>
+					   
+   
+					   </div>
+   
+						 <!-- DELETE ITEM BTN-->
+						 <span class="btn btn-icon  rounded-circle text-gray"><i class=" ion-close-round"
+							></i></span>
+				   </div>
+   
+						   <!-- ITEM CONTENTS-->
+						   <div class="card-body">
+							   
+							   <div class="form-row ">
+								   <div class="form-group col-md-3">
+									   <div class="form-group">
+										   <label class="form-label">Quantity</label>
+										   <input type="number" class="form-control" placeholder="15" >
+									   </div>
+								   </div>
+								   <div class="form-group mb-0 col-md-3">
+   
+									   <div class="form-group">
+										   <label class="form-label">Refills</label>
+										   <input type="number" class="form-control" placeholder="0">
+									   </div>
+								   </div>
+   
+								   <div class="form-group col-md-3">
+									   <label class="form-label">Days Supply</label>
+									   <input type="number" class="form-control"  placeholder="25">
+								   </div>
+								   <div class="form-group col-md-3 mb-0">
+									   <label class="form-label">SIG</label>
+									   <input type="text" class="form-control"  placeholder="Use As Directed">
+								   </div>
+							   </div>
+							  
+							   
+						   </div>
+   
+							</div>
+   
 
-                    <!--INDIVIDUAL GROUP ITEM! -->
-                        <div class="card shadow-sm">
-                        <div class="card-header d-sm-flex gap-1 justify-content-between align-items-center bg-success-transparent">
-        
-                            <div class="d-flex gap-4 align-items-center">
-                            <h3 class="card-title align-middle text-success">Syringe - Insulin <em>(30G x 1/2 x 1ML)</em></h3>
-                            
-        
-                            </div>
-        
-                              <!-- Delete ITEM Button-->
-                              <span class="btn btn-icon btn-danger rounded-circle btn-sm"><i class=" fa fa-close"
-                                ></i></span>
-                        </div>
-                                <div class="card-body">
-                                    
-                                    <div class="form-row ">
-                                        <div class="form-group col-md-3">
-                                            <div class="form-group">
-                                                <label class="form-label">Quantity</label>
-                                                <input type="number" class="form-control" placeholder="15" >
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-0 col-md-3">
-        
-                                            <div class="form-group">
-                                                <label class="form-label">Refills</label>
-                                                <input type="number" class="form-control" placeholder="0">
-                                            </div>
-                                        </div>
-        
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label">Days Supply</label>
-                                            <input type="number" class="form-control"  placeholder="25">
-                                        </div>
-                                        <div class="form-group col-md-3 mb-0">
-                                            <label class="form-label">SIG</label>
-                                            <input type="text" class="form-control"  placeholder="Use As Directed">
-                                        </div>
-                                    </div>
-                                   
-                                    
-                                </div>
-        
-                            </div>
+                    
                    
 
                     </div>
                 </div>
+
+				<!--INDIVIDUAL GROUP!!-->
+				<div class="card shadow-sm">
+
+
+					<div class="card-header d-sm-flex gap-1 justify-content-between align-items-center bg-primary-gradient">
+
+						<div class="d-flex gap-4 align-items-center">
+						<h3 class="card-title align-middle text-white">TEST IM 0.4ML</h3>
+
+						 <!-- EDIT NAME BUTTON-->
+						 <a href="javascript:void(0)" class="btn btn-warning-light  align-middle">Edit Name</a> 
+
+						</div>
+
+						  <!-- DELETE GROUP BUTTON -->
+						  <a href="javascript:void(0)" class="btn btn-danger align-middle justify-self-end ">Delete Group</a>
+					</div>
+
+				
+				 <div class="card-body">
+
+	   
+
+					 <!--INDIVIDUAL ITEM! -->
+					 <div class="card shadow-lg">
+					 <div class="card-header d-sm-flex gap-1 justify-content-between align-items-center bg-info-transparent">
+
+				<div class="d-flex gap-4 align-items-center">
+				<h3 class="card-title align-middle text-info">Syringe - Insulin <em>(30G x 1/2 x 1ML)</em></h3>
+				
+
+				</div>
+
+				  <!-- DELETE ITEM BTN-->
+				  <span class="btn btn-icon  rounded-circle text-gray"><i class=" ion-close-round"
+					></i></span>
+			</div>
+
+					<!-- ITEM CONTENTS-->
+					<div class="card-body">
+						
+						<div class="form-row ">
+							<div class="form-group col-md-3">
+								<div class="form-group">
+									<label class="form-label">Quantity</label>
+									<input type="number" class="form-control" placeholder="15" >
+								</div>
+							</div>
+							<div class="form-group mb-0 col-md-3">
+
+								<div class="form-group">
+									<label class="form-label">Refills</label>
+									<input type="number" class="form-control" placeholder="0">
+								</div>
+							</div>
+
+							<div class="form-group col-md-3">
+								<label class="form-label">Days Supply</label>
+								<input type="number" class="form-control"  placeholder="25">
+							</div>
+							<div class="form-group col-md-3 mb-0">
+								<label class="form-label">SIG</label>
+								<input type="text" class="form-control"  placeholder="Use As Directed">
+							</div>
+						</div>
+					   
+						
+					</div>
+
+					 </div>
+					
+				
+
+				
+			   
+
+				</div>
+			</div>
+
+		</div>
                         
 
-                    <!--INDIVIDUAL GROUP!!-->
-                    <div class="card shadow-sm">
-
-
-                        <div class="card-header d-sm-flex gap-1 justify-content-between align-items-center bg-info-transparent">
-
-                            <div class="d-flex gap-4 align-items-center">
-                            <h3 class="card-title align-middle text-info">TEST IM 0.4ML</h3>
-
-                             <!-- EDIT NAME BUTTON-->
-                             <a href="javascript:void(0)" class="btn btn-warning-light  align-middle">Edit Name</a> 
-
-                            </div>
-
-                              <!-- DELETE GROUP BUTTON -->
-                              <a href="javascript:void(0)" class="btn btn-danger align-middle justify-self-end ">Delete Group</a>
-                        </div>
-
-
-           <div class="card-body">
-
-            <!-- GROUP ITEMS-->
-
-            <div class="card shadow-sm">
-                <div class="card-header d-sm-flex gap-1 justify-content-between align-items-center bg-success-transparent">
-
-                    <div class="d-flex gap-4 align-items-center">
-                    <h3 class="card-title align-middle text-success">Syringe - Insulin <em>(30G x 1/2 x 1ML)</em></h3>
-                    
-
-                    </div>
-
-                      <!-- Delete ITEM Button-->
-                      <span class="btn btn-icon btn-danger rounded-circle btn-sm"><i class=" fa fa-close"
-                        ></i></span>
-                </div>
-                        <div class="card-body">
-                            
-                            <div class="form-row ">
-                                <div class="form-group col-md-3">
-                                    <div class="form-group">
-                                        <label class="form-label">Quantity</label>
-                                        <input type="number" class="form-control" placeholder="15" >
-                                    </div>
-                                </div>
-                                <div class="form-group mb-0 col-md-3">
-
-                                    <div class="form-group">
-                                        <label class="form-label">Refills</label>
-                                        <input type="number" class="form-control" placeholder="0">
-                                    </div>
-                                </div>
-
-                                <div class="form-group col-md-3">
-                                    <label class="form-label">Days Supply</label>
-                                    <input type="number" class="form-control"  placeholder="25">
-                                </div>
-                                <div class="form-group col-md-3 mb-0">
-                                    <label class="form-label">SIG</label>
-                                    <input type="text" class="form-control"  placeholder="Use As Directed">
-                                </div>
-                            </div>
-                           
-                            
-                        </div>
-
-                    </div>
-                   
-
-                    </div>
-                </div>
-
+                 
                
 
                     
