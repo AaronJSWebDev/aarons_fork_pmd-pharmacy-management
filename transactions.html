@@ -2171,17 +2171,17 @@
                             <div>
 
                             <!-- Title -->
-                             <h1 class="page-title py-5">Problem Orders</h1>
+                             <h1 class="page-title py-5">Transactions</h1>
 
                             
-                             <!-- IF NO PROBLEM ORDERS SHOW ALERT-->
+                             <!-- IF NO TRANSACTIONS ORDERS SHOW ALERT-->
 
                              <!--
 
                             
                              <div class="flex justify-content-start ">
                                 <div class="alert alert-warning col-md-6 py-5" role="alert">
-                                   <i class="fa fa-exclamation me-2" aria-hidden="true"></i>No current problem orders.
+                                   <i class="fa fa-exclamation me-2" aria-hidden="true"></i>No current transactions to show.
                                </div>
                            </div>
 
@@ -2199,28 +2199,80 @@
 								<table id="data-table" class=" table border table-bordered text-nowrap mb-0  ">
 									<thead class="">
 										<tr>
-											<th>View</th>
-											<th>Order #</th>
-											<th>Patient Name</th>
-                                            <th>Problem</th>
-											<th>Resolution Submitted</th>
-											<th>Additional Notes</th>
+											<th>Date</th>
+											<th>Card #</th>
+											<th>Order Total</th>
+                                            <th>Invoice</th>
+											<th>Status</th>
+											
 											
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">34435363</td>
-											<td class="align-middle">SASSON, JERRY</td>
-                                            <td class="align-middle">Unable to recieve order</td>
+											
+											<td class="align-middle">08/25/2023</td>
+											<td class="align-middle">345423******4564</td>
+                                            <td class="align-middle">$535.64</td>
+                                            <td class="align-middle">
+												<button type="button" class="btn btn-info" fdprocessedid="">View Invoice</button></td>
 											<td class="align-middle">
 												<div >
-													<span class="badge bg-danger-transparent rounded-pill text-danger p-2 px-3">NO</span>
+													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Approved</span>
 												</div>
 											</td>
-											<td class="align-middle">N/A</td>
+											
+											
+
+										</tr>
+
+                                        <tr>
+											
+											<td class="align-middle">08/24/2023</td>
+											<td class="align-middle">345423******4564</td>
+                                            <td class="align-middle">$612.88</td>
+                                            <td class="align-middle">
+												<button type="button" class="btn btn-info" fdprocessedid="">View Invoice</button></td>
+                                                <td class="align-middle">
+                                                    <div >
+                                                        <span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Approved</span>
+                                                    </div>
+                                                </td>
+											
+											
+
+										</tr>
+
+                                        <tr>
+											
+											<td class="align-middle">08/22/2023</td>
+											<td class="align-middle">345423******4564</td>
+                                            <td class="align-middle">$335.14</td>
+                                            <td class="align-middle">
+												<button type="button" class="btn btn-info" fdprocessedid="">View Invoice</button></td>
+                                                <td class="align-middle">
+                                                    <div >
+                                                        <span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Approved</span>
+                                                    </div>
+                                                </td>
+											
+											
+
+										</tr>
+
+                                        <tr>
+											
+											<td class="align-middle">08/17/2023</td>
+											<td class="align-middle">345423******4564</td>
+                                            <td class="align-middle">$43.12</td>
+                                            <td class="align-middle">
+												<button type="button" class="btn btn-info" fdprocessedid="">View Invoice</button></td>
+											<td class="align-middle">
+												<div >
+													<span class="badge bg-danger-transparent rounded-pill text-danger p-2 px-3">Declined</span>
+												</div>
+											</td>
+											
 											
 
 										</tr>
