@@ -2172,20 +2172,34 @@
 							<div class="side-app">
 								<!-- ORDER # AND RX PDF LINK CONTAINER-->
 								<div class="d-sm-flex gap-4 align-items-center justify-content-between">
-									<div class="d-flex gap-1 justify-self-start pb-4">
+									<div class="d-flex gap-1 justify-self-start align-items-start pb-5">
 										<h1 class="page-title">Order ID</h1>
 
 										<!-- ORDER NUMBER-->
-										<h1 class="page-title">9713402</h1>
+										<h1 class="page-title align-self-center">9713402</h1>
 
 										<button class="border-0 align-self-center mx-2">
 											<i class="ion-more" data-bs-toggle="tooltip" aria-label="" data-bs-original-title=""></i>
 										</button>
 
 										<!-- UPDATE STATUS -->
-										<div>
-											<span class="badge bg-success-gradient rounded-pill text-success-transparent p-2 px-5">Filled</span>
-										</div>
+										<button
+											type="button"
+											class="btn btn-primary btn-sm dropdown-toggle align-self-center"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Pending <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu" style="">
+											<li class="dropdown-plus-title">
+												Change Status
+												<b class="fa fa-angle-up" aria-hidden="true"></b>
+											</li>
+											<li><a href="javascript:void(0)">Pending</a></li>
+											<li><a href="javascript:void(0)">Requested</a></li>
+											<li><a href="javascript:void(0)">Filled</a></li>
+										</ul>
 									</div>
 
 									<div class="align-self-start">
@@ -2207,24 +2221,6 @@
 										</div>
 									</div>
 								</div>
-
-								<!--******* RIGHT SIDE CONTAINER ******* -->
-								<!-- <div class=" col-md-4 ">
-
-										<div class=" p-4 ">
-										
-                                        <div class="d-flex gap-1 align-items-center justify-content-start"> 
-
-                                            <h4>Order Total: </h4>
-                                            <h3><strong>249.67</strong></h3>
-
-                                        </div>
-									</div>
-
-										
-
-										
-										</div> -->
 
 								<div class="card">
 									<!-- MEDICATIONS TABLE -->
@@ -2400,278 +2396,303 @@
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="container">
-								<ul class="notification">
-									<li>
-										<div class="notification-time">
-											<span class="date">Today</span>
-											<span class="time">02:31</span>
+								<!-- COMMENTS INPUT-->
+								
+									<div class="card">
+										<div class="card-header">
+											<div class="card-title">ORDER COMMENTS</div>
 										</div>
-										<div class="notification-icon">
-											<a href="javascript:void(0);"></a>
-										</div>
-										<div class="notification-time-date mb-2 d-block d-md-none">
-											<span class="date">Today</span>
-											<span class="time ms-2">02:31</span>
-										</div>
-										<div class="notification-body">
-											<div class="media mt-0">
-												<div class="main-avatar avatar-md online">
-													<img alt="avatar" class="br-7" src="assets/images/users/1.jpg" />
-												</div>
-												<div class="media-body ms-3 d-flex">
-													<div class="">
-														<p class="fs-15 text-dark fw-bold mb-0">Dennis Trexy</p>
-														<p class="mb-0 fs-13 text-dark">2 Members Accepted your Request.</p>
+										<div class="card-body">
+											<form class="form-horizontal m-t-20" action="index.html">
+												<div class="form-group">
+													<div class="col-xs-12">
+														<textarea class="form-control" rows="5" style="height: 100px">Add a Comment</textarea>
 													</div>
-													<div class="notify-time">
-														<p class="mb-0 text-muted fs-11">2 Hrs ago</p>
+												</div>
+												<div class="">
+													<a href="javascript:void(0)" class="btn btn-primary btn-rounded waves-effect waves-light">Submit</a>
+												</div>
+											</form>
+										</div>
+									</div>
+								
+
+								<!-- NOTIFICATIONS -->
+
+								<div class="container">
+									<ul class="notification">
+										<li>
+											<div class="notification-time">
+												<span class="date">Today</span>
+												<span class="time">02:31</span>
+											</div>
+											<div class="notification-icon">
+												<a href="javascript:void(0);"></a>
+											</div>
+											<div class="notification-time-date mb-2 d-block d-md-none">
+												<span class="date">Today</span>
+												<span class="time ms-2">02:31</span>
+											</div>
+											<div class="notification-body">
+												<div class="media mt-0">
+													<div class="main-avatar avatar-md online">
+														<img alt="avatar" class="br-7" src="assets/images/users/1.jpg" />
+													</div>
+													<div class="media-body ms-3 d-flex">
+														<div class="">
+															<p class="fs-15 text-dark fw-bold mb-0">Dennis Trexy</p>
+															<p class="mb-0 fs-13 text-dark">2 Members Accepted your Request.</p>
+														</div>
+														<div class="notify-time">
+															<p class="mb-0 text-muted fs-11">2 Hrs ago</p>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</li>
-									<li>
-										<div class="notification-time">
-											<span class="date">Yesterday</span>
-											<span class="time">18:47</span>
-										</div>
-										<div class="notification-icon">
-											<a href="javascript:void(0);"></a>
-										</div>
-										<div class="notification-time-date mb-2 d-block d-md-none">
-											<span class="date">Yesterday</span>
-											<span class="time ms-2">18:47</span>
-										</div>
-										<div class="notification-body">
-											<div class="media mt-0">
-												<div class="main-avatar avatar-md offline">
-													<span class="avatar avatar-md bradius bg-pink me-3">ED</span>
-												</div>
-												<div class="media-body ms-3 d-flex">
-													<div class="">
-														<p class="fs-15 text-dark fw-bold mb-0">Eileen Dover</p>
-														<p class="mb-0 fs-13 text-dark">Created New Template for Designing Department.</p>
+										</li>
+										<li>
+											<div class="notification-time">
+												<span class="date">Yesterday</span>
+												<span class="time">18:47</span>
+											</div>
+											<div class="notification-icon">
+												<a href="javascript:void(0);"></a>
+											</div>
+											<div class="notification-time-date mb-2 d-block d-md-none">
+												<span class="date">Yesterday</span>
+												<span class="time ms-2">18:47</span>
+											</div>
+											<div class="notification-body">
+												<div class="media mt-0">
+													<div class="main-avatar avatar-md offline">
+														<span class="avatar avatar-md bradius bg-pink me-3">ED</span>
 													</div>
-													<div class="notify-time">
-														<p class="mb-0 text-muted fs-11">18:47</p>
+													<div class="media-body ms-3 d-flex">
+														<div class="">
+															<p class="fs-15 text-dark fw-bold mb-0">Eileen Dover</p>
+															<p class="mb-0 fs-13 text-dark">Created New Template for Designing Department.</p>
+														</div>
+														<div class="notify-time">
+															<p class="mb-0 text-muted fs-11">18:47</p>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</li>
-									<li>
-										<div class="notification-time">
-											<span class="date">Yesterday</span>
-											<span class="time">06:43</span>
-										</div>
-										<div class="notification-icon">
-											<a href="javascript:void(0);"></a>
-										</div>
-										<div class="notification-time-date mb-2 d-block d-md-none">
-											<span class="date">Yesterday</span>
-											<span class="time ms-2">06:43</span>
-										</div>
-										<div class="notification-body">
-											<div class="media mt-0">
-												<div class="main-avatar avatar-md online">
-													<img alt="avatar" class="br-7" src="assets/images/users/2.jpg" />
-												</div>
-												<div class="media-body ms-3 d-flex">
-													<div class="">
-														<p class="fs-15 text-dark fw-bold mb-0">
-															Elida Distefa<span class="badge bg-success ms-3 px-2 pb-1 mb-1">New Deal</span>
-														</p>
-														<p class="mb-0 fs-13 text-dark">Shipment is Out for Delivery.</p>
+										</li>
+										<li>
+											<div class="notification-time">
+												<span class="date">Yesterday</span>
+												<span class="time">06:43</span>
+											</div>
+											<div class="notification-icon">
+												<a href="javascript:void(0);"></a>
+											</div>
+											<div class="notification-time-date mb-2 d-block d-md-none">
+												<span class="date">Yesterday</span>
+												<span class="time ms-2">06:43</span>
+											</div>
+											<div class="notification-body">
+												<div class="media mt-0">
+													<div class="main-avatar avatar-md online">
+														<img alt="avatar" class="br-7" src="assets/images/users/2.jpg" />
 													</div>
-													<div class="notify-time">
-														<p class="mb-0 text-muted fs-11">06:43</p>
+													<div class="media-body ms-3 d-flex">
+														<div class="">
+															<p class="fs-15 text-dark fw-bold mb-0">
+																Elida Distefa<span class="badge bg-success ms-3 px-2 pb-1 mb-1">New Deal</span>
+															</p>
+															<p class="mb-0 fs-13 text-dark">Shipment is Out for Delivery.</p>
+														</div>
+														<div class="notify-time">
+															<p class="mb-0 text-muted fs-11">06:43</p>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</li>
-									<li>
-										<div class="notification-time">
-											<span class="date">23 Oct</span>
-											<span class="time">03:15</span>
-										</div>
-										<div class="notification-icon">
-											<a href="javascript:void(0);"></a>
-										</div>
-										<div class="notification-time-date mb-2 d-block d-md-none">
-											<span class="date">23 Oct</span>
-											<span class="time ms-2">03:15</span>
-										</div>
-										<div class="notification-body">
-											<div class="media mt-0">
-												<div class="main-avatar avatar-md online">
-													<img alt="avatar" class="br-7" src="assets/images/users/12.jpg" />
-												</div>
-												<div class="media-body ms-3 d-flex">
-													<div class="">
-														<p class="fs-15 text-dark fw-bold mb-0">Harvey Mattos</p>
-														<p class="mb-0 fs-13 text-dark">Mentioned you in a post.</p>
+										</li>
+										<li>
+											<div class="notification-time">
+												<span class="date">23 Oct</span>
+												<span class="time">03:15</span>
+											</div>
+											<div class="notification-icon">
+												<a href="javascript:void(0);"></a>
+											</div>
+											<div class="notification-time-date mb-2 d-block d-md-none">
+												<span class="date">23 Oct</span>
+												<span class="time ms-2">03:15</span>
+											</div>
+											<div class="notification-body">
+												<div class="media mt-0">
+													<div class="main-avatar avatar-md online">
+														<img alt="avatar" class="br-7" src="assets/images/users/12.jpg" />
 													</div>
-													<div class="notify-time">
-														<p class="mb-0 text-muted fs-11">03:15</p>
+													<div class="media-body ms-3 d-flex">
+														<div class="">
+															<p class="fs-15 text-dark fw-bold mb-0">Harvey Mattos</p>
+															<p class="mb-0 fs-13 text-dark">Mentioned you in a post.</p>
+														</div>
+														<div class="notify-time">
+															<p class="mb-0 text-muted fs-11">03:15</p>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</li>
-									<li>
-										<div class="notification-time">
-											<span class="date">15 Oct</span>
-											<span class="time">12:14</span>
-										</div>
-										<div class="notification-icon">
-											<a href="javascript:void(0);"></a>
-										</div>
-										<div class="notification-time-date mb-2 d-block d-md-none">
-											<span class="date">15 Oct</span>
-											<span class="time ms-2">12:14</span>
-										</div>
-										<div class="notification-body">
-											<div class="media mt-0">
-												<div class="main-avatar avatar-md offline">
-													<span class="avatar avatar-md bradius me-3 bg-primary">IH</span>
-												</div>
-												<div class="media-body ms-3 d-flex">
-													<div class="">
-														<p class="fs-15 text-dark fw-bold mb-0">Catrice Doshier</p>
-														<p class="mb-0 fs-13 text-dark">2 Members Accepted your Request.</p>
+										</li>
+										<li>
+											<div class="notification-time">
+												<span class="date">15 Oct</span>
+												<span class="time">12:14</span>
+											</div>
+											<div class="notification-icon">
+												<a href="javascript:void(0);"></a>
+											</div>
+											<div class="notification-time-date mb-2 d-block d-md-none">
+												<span class="date">15 Oct</span>
+												<span class="time ms-2">12:14</span>
+											</div>
+											<div class="notification-body">
+												<div class="media mt-0">
+													<div class="main-avatar avatar-md offline">
+														<span class="avatar avatar-md bradius me-3 bg-primary">IH</span>
 													</div>
-													<div class="notify-time">
-														<p class="mb-0 text-muted fs-11">12:14</p>
+													<div class="media-body ms-3 d-flex">
+														<div class="">
+															<p class="fs-15 text-dark fw-bold mb-0">Catrice Doshier</p>
+															<p class="mb-0 fs-13 text-dark">2 Members Accepted your Request.</p>
+														</div>
+														<div class="notify-time">
+															<p class="mb-0 text-muted fs-11">12:14</p>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</li>
-									<li>
-										<div class="notification-time">
-											<span class="date">30 Sep</span>
-											<span class="time">14:04</span>
-										</div>
-										<div class="notification-icon">
-											<a href="javascript:void(0);"></a>
-										</div>
-										<div class="notification-time-date mb-2 d-block d-md-none">
-											<span class="date">30 Sep</span>
-											<span class="time ms-2">14:04</span>
-										</div>
-										<div class="notification-body">
-											<div class="media mt-0">
-												<div class="main-avatar avatar-md offline">
-													<img alt="avatar" class="br-7" src="assets/images/users/13.jpg" />
-												</div>
-												<div class="media-body ms-3 d-flex">
-													<div class="">
-														<p class="fs-15 text-dark fw-bold mb-0">Mercy Ritia<span class="badge bg-danger ms-3 px-2 pb-1 mb-1">Last Deal</span></p>
-														<p class="mb-0 fs-13 text-dark">Created New Template for Designing Department.</p>
+										</li>
+										<li>
+											<div class="notification-time">
+												<span class="date">30 Sep</span>
+												<span class="time">14:04</span>
+											</div>
+											<div class="notification-icon">
+												<a href="javascript:void(0);"></a>
+											</div>
+											<div class="notification-time-date mb-2 d-block d-md-none">
+												<span class="date">30 Sep</span>
+												<span class="time ms-2">14:04</span>
+											</div>
+											<div class="notification-body">
+												<div class="media mt-0">
+													<div class="main-avatar avatar-md offline">
+														<img alt="avatar" class="br-7" src="assets/images/users/13.jpg" />
 													</div>
-													<div class="notify-time">
-														<p class="mb-0 text-muted fs-11">14:04</p>
+													<div class="media-body ms-3 d-flex">
+														<div class="">
+															<p class="fs-15 text-dark fw-bold mb-0">
+																Mercy Ritia<span class="badge bg-danger ms-3 px-2 pb-1 mb-1">Last Deal</span>
+															</p>
+															<p class="mb-0 fs-13 text-dark">Created New Template for Designing Department.</p>
+														</div>
+														<div class="notify-time">
+															<p class="mb-0 text-muted fs-11">14:04</p>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</li>
-									<li>
-										<div class="notification-time">
-											<span class="date">18 Sep</span>
-											<span class="time">12:26</span>
-										</div>
-										<div class="notification-icon">
-											<a href="javascript:void(0);"></a>
-										</div>
-										<div class="notification-time-date mb-2 d-block d-md-none">
-											<span class="date">18 Sep</span>
-											<span class="time ms-2">12:26</span>
-										</div>
-										<div class="notification-body">
-											<div class="media mt-0">
-												<div class="main-avatar avatar-md online">
-													<img alt="avatar" class="br-7" src="assets/images/users/4.jpg" />
-												</div>
-												<div class="media-body ms-3 d-flex">
-													<div class="">
-														<p class="fs-15 text-dark fw-bold mb-0">Mark Jhon</p>
-														<p class="mb-0 fs-13 text-dark">Shipment is Out for Delivery.</p>
+										</li>
+										<li>
+											<div class="notification-time">
+												<span class="date">18 Sep</span>
+												<span class="time">12:26</span>
+											</div>
+											<div class="notification-icon">
+												<a href="javascript:void(0);"></a>
+											</div>
+											<div class="notification-time-date mb-2 d-block d-md-none">
+												<span class="date">18 Sep</span>
+												<span class="time ms-2">12:26</span>
+											</div>
+											<div class="notification-body">
+												<div class="media mt-0">
+													<div class="main-avatar avatar-md online">
+														<img alt="avatar" class="br-7" src="assets/images/users/4.jpg" />
 													</div>
-													<div class="notify-time">
-														<p class="mb-0 text-muted fs-11">12:26</p>
+													<div class="media-body ms-3 d-flex">
+														<div class="">
+															<p class="fs-15 text-dark fw-bold mb-0">Mark Jhon</p>
+															<p class="mb-0 fs-13 text-dark">Shipment is Out for Delivery.</p>
+														</div>
+														<div class="notify-time">
+															<p class="mb-0 text-muted fs-11">12:26</p>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</li>
-									<li>
-										<div class="notification-time">
-											<span class="date">03 Sep</span>
-											<span class="time">05:37</span>
-										</div>
-										<div class="notification-icon">
-											<a href="javascript:void(0);"></a>
-										</div>
-										<div class="notification-time-date mb-2 d-block d-md-none">
-											<span class="date">03 Sep</span>
-											<span class="time ms-2">05:37</span>
-										</div>
-										<div class="notification-body">
-											<div class="media mt-0">
-												<div class="main-avatar avatar-md offline">
-													<img alt="avatar" class="br-7" src="assets/images/users/14.jpg" />
-												</div>
-												<div class="media-body ms-3 d-flex">
-													<div class="">
-														<p class="fs-15 text-dark fw-bold mb-0">Benedict Vallone</p>
-														<p class="mb-0 fs-13 text-dark">Thanking you for Accepting Request.</p>
+										</li>
+										<li>
+											<div class="notification-time">
+												<span class="date">03 Sep</span>
+												<span class="time">05:37</span>
+											</div>
+											<div class="notification-icon">
+												<a href="javascript:void(0);"></a>
+											</div>
+											<div class="notification-time-date mb-2 d-block d-md-none">
+												<span class="date">03 Sep</span>
+												<span class="time ms-2">05:37</span>
+											</div>
+											<div class="notification-body">
+												<div class="media mt-0">
+													<div class="main-avatar avatar-md offline">
+														<img alt="avatar" class="br-7" src="assets/images/users/14.jpg" />
 													</div>
-													<div class="notify-time">
-														<p class="mb-0 text-muted fs-11">05:37</p>
+													<div class="media-body ms-3 d-flex">
+														<div class="">
+															<p class="fs-15 text-dark fw-bold mb-0">Benedict Vallone</p>
+															<p class="mb-0 fs-13 text-dark">Thanking you for Accepting Request.</p>
+														</div>
+														<div class="notify-time">
+															<p class="mb-0 text-muted fs-11">05:37</p>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</li>
-									<li>
-										<div class="notification-time">
-											<span class="date">28 Aug</span>
-											<span class="time">15:24</span>
-										</div>
-										<div class="notification-icon">
-											<a href="javascript:void(0);"></a>
-										</div>
-										<div class="notification-time-date mb-2 d-block d-md-none">
-											<span class="date">28 Aug</span>
-											<span class="time ms-2">15:24</span>
-										</div>
-										<div class="notification-body">
-											<div class="media mt-0">
-												<div class="main-avatar avatar-md online">
-													<span class="avatar avatar-md bradius me-3 bg-secondary">IH</span>
-												</div>
-												<div class="media-body ms-3 d-flex">
-													<div class="">
-														<p class="fs-15 text-dark fw-bold mb-0">Paul Johny</p>
-														<p class="mb-0 fs-13 text-dark">Invited you to a Group.</p>
+										</li>
+										<li>
+											<div class="notification-time">
+												<span class="date">28 Aug</span>
+												<span class="time">15:24</span>
+											</div>
+											<div class="notification-icon">
+												<a href="javascript:void(0);"></a>
+											</div>
+											<div class="notification-time-date mb-2 d-block d-md-none">
+												<span class="date">28 Aug</span>
+												<span class="time ms-2">15:24</span>
+											</div>
+											<div class="notification-body">
+												<div class="media mt-0">
+													<div class="main-avatar avatar-md online">
+														<span class="avatar avatar-md bradius me-3 bg-secondary">IH</span>
 													</div>
-													<div class="notify-time">
-														<p class="mb-0 text-muted fs-11">15:24</p>
+													<div class="media-body ms-3 d-flex">
+														<div class="">
+															<p class="fs-15 text-dark fw-bold mb-0">Paul Johny</p>
+															<p class="mb-0 fs-13 text-dark">Invited you to a Group.</p>
+														</div>
+														<div class="notify-time">
+															<p class="mb-0 text-muted fs-11">15:24</p>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</li>
-								</ul>
-								<div class="text-center mb-4">
-									<button class="btn ripple btn-primary w-md">Load more</button>
+										</li>
+									</ul>
+									<div class="text-center mb-4">
+										<button class="btn ripple btn-primary w-md">Load more</button>
+									</div>
 								</div>
-							</div>
+							
 
 							<!-- ROW-1 CLOSED -->
 						</div>
